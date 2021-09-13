@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  --bar-color: rgb(139, 143, 139);
+  --active-color: green;
+  --btn-color: #007bff;
+}
+.container {
+  /* border: 1px solid red; */
+  width: 40%;
+  min-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.step-bar .circle {
+  background: var(--bar-color);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transform: scale(1.3);
+}
+.step-bar .active {
+  background: var(--active-color) !important;
+  z-index: 1000;
+  transform: scale(1.5);
+  transition: all 1s ease;
+}
+.step-bar .bars {
+  background: var(--bar-color);
+  width: calc(30%);
+  height: 9px;
+}
+
+.layouts {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  overflow-x: hidden;
+}
+.layouts .boxs {
+  border-radius: 5px;
+  width: 90%;
+  display: inline;
+  height: calc(90% - 6%);
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: left 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 0 10px rgb(22, 37, 22);
+}
+.layouts .log-2 {
+  background: rgb(22, 37, 22);
+  left: 150%;
+  transition: left 1s ease-out;
+}
+.layouts .log-3 {
+  background: rgb(26, 26, 16);
+  left: 150%;
+  transition: left 1s ease-out;
+}
+.layouts .log-1 {
+  background: rgb(39, 38, 38);
+  transition: left 1s ease-out;
+}
+.form-control {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 10px;
+}
+.form-control label {
+  color: #fff;
+  font-size: larger;
+  margin: 3px;
+}
+.form-control input {
+  outline: 0;
+  border: 0;
+  padding: 7px 10px;
+  width: 100%;
+  border-radius: 3px;
+}
+.btns {
+  /* border: 1px solid rgb(24, 9, 231); */
+  width: 80%;
+  margin: 0px auto 0px auto;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
+}
+.btns button {
+  padding: 5px 40px;
+  background: var(--btn-color);
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(74, 77, 80, 0.938);
+  cursor: pointer;
+}
+.btns #prev {
+  display: none;
+}

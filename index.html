@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step | Log In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="step-bar">
+            <sapn class="circle ">1</sapn>
+            <span class="bars"></span>
+            <sapn class="circle ">2</sapn>
+            <span class="bars"></span>
+            <sapn class="circle ">3</sapn>
+        </div>
+        <div class="layouts">
+            <div class="boxs log-1">
+               <h3>Email Validation</h3>
+               <div class="form-control">
+                   <label for="email">Email :</label>
+                   <input type="email" name="email" id="email">
+               </div> 
+               <div class="form-control">
+                   <label for="Reemail"> Re-enter Email :</label>
+                   <input type="email" name="email" id="Reemail">
+               </div> 
+            </div>
+            <div class="boxs log-2">
+                <h3>Password Validation</h3>
+                <div class="form-control">
+                    <label for="pass">Password : </label>
+                    <input type="password" name="email" id="password">
+                </div>
+                <div class="form-control">
+                    <label for="repass"> Re-enter Password :</label>
+                    <input type="password" name="email" id="repass">
+                </div>
+            </div>
+            <div class="boxs log-3">
+                <h3>UserName Validation</h3>
+                <div class="form-control">
+                    <label for="text">Username :</label>
+                    <input type="text" name="text" id="text">
+                </div>
+                <div class="form-control">
+                    <label for="Retext"> Re-enter Username :</label>
+                    <input type="text" name="text" id="Retext">
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="prev" data-val="">Prev</button>
+            <button id="next" data-val="1">Next</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
